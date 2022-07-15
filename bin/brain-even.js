@@ -1,24 +1,24 @@
 import readlineSync from 'readline-sync';
 
-const greetPlayer = () => {
+const greetingPlayer = () => {
     console.log('Welcome to the Brain Games!');
-    const playerName = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${playerName}!`);
-    return playerName;
+    const name = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${name}!`);
+    return name;
 };
 
-const getRandomNumber = (maxRange) => {
+const getRandomNumber = (max) => {
     let randomNumber = 0;
-    randomNumber = Math.floor(Math.random() * maxRange);
+    randomNumber = Math.floor(Math.random() * max);
     return randomNumber;
 };
 
-const showMessage = (playerName, playerAnswer, correctAnswer) => {
+const showMessage = (name, playerAnswer, correctAnswer) => {
     if (correctAnswer === playerAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${playerName}`);
+      console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`Let's try again, ${name}`);
       process.exit();
     }
 };  
@@ -26,13 +26,13 @@ const showMessage = (playerName, playerAnswer, correctAnswer) => {
 const countRounds = 3;
 
 const isEvenNumber = (number) => {
-    if (number % 2 === 0) {
-      return 'yes';
+    if (number % 2 === 1) {
+      return 'no';
     }
-    return 'no';
+    return 'yes';
 };
 
-const playerName = greetPlayer();
+const name = greetingPlayer();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -46,9 +46,9 @@ const runScript = () => {
 
         const correctAnswer = isEvenNumber(randomNumber);
 
-        showMessage(playerName, playerAnswer, correctAnswer);
+        showMessage(name, playerAnswer, correctAnswer);
     }
-    console.log(`Congratulations, ${playerName}`);
+    console.log(`Congratulations, ${name}`);
 };
 
 runScript();
