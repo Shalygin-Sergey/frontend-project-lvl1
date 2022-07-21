@@ -23,7 +23,7 @@ export default (description, getQuestionAndAnswer) => {
             console.log('Correct!');
         } else {
             console.log(`${userResponse} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-            console.log(`Let's try again, ${name}`);
+            console.log(`Let's try again, ${name}!`);
             return;
         }        
     }
