@@ -79,7 +79,7 @@ $brain-progression
 
 ##### Пример игры
 
-[![asciicast](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo.svg)](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo)
+[![asciicast](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao.svg)](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao)
     
 Игра: "Калькулятор"
 =========================
@@ -94,6 +94,6 @@ $brain-calc
 
 ##### Пример игры
 
-[![asciicast](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F.svg)](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F)
+[![asciicast](https://asciinema.org/a/lQrwFe3d6bUoQ9wR71APUHbWg.svg)](https://asciinema.org/a/lQrwFe3d6bUoQ9wR71APUHbWg)
 
     
