@@ -3,23 +3,22 @@ import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-const getPrimeNumber = (num) => {  
-    for (let i = 2; i < num; i++) {
-      if (num % i === 0) {
-        return false;
-      }
+const getPrimeNumber = (num) => {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
     }
-    return true;
-  };
+  }
+  return true;
+};
 
 const getQuestionAndAnswer = () => {
+  const question = getRandomNumber(2, 50);
+  const correctAnswer = getPrimeNumber(question) ? 'yes' : 'no';
 
-    const question = getRandomNumber(2, 50);
-    const correctAnswer = getPrimeNumber(question) ? 'yes' : 'no';
-
-    return [question, correctAnswer];
+  return [question, correctAnswer];
 };
 
 export default () => {
-    runGame(description, getQuestionAndAnswer)
-}
+  runGame(description, getQuestionAndAnswer);
+};
