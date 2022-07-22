@@ -30,9 +30,15 @@
 $brain-even
 ```
 
+##### Пример игры
+
+[![asciicast](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F.svg)](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F)
+
 
 Игра: "Проверка простого числа"
 =========================
+
+[![asciicast](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao.svg)](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao)
 
 Суть игры в следующем: игроку показывается случайное число. Ему нужно ответить yes, если число простое, или no — если нет.
 
@@ -41,6 +47,10 @@ $brain-even
 ```
 $brain-prime
 ```
+
+##### Пример игры
+
+[![asciicast](https://asciinema.org/a/fpgk93BWGWIsaD8cstllvVbsa.svg)](https://asciinema.org/a/fpgk93BWGWIsaD8cstllvVbsa)
 
 
 Игра: "Определение наибольшего общего делителя"
@@ -53,6 +63,10 @@ $brain-prime
 ```
 $brain-gcd
 ```
+
+##### Пример игры
+
+[![asciicast](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo.svg)](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo)
     
 Игра: "Арифметическая прогрессия"
 =========================
@@ -64,6 +78,10 @@ $brain-gcd
 ```
 $brain-progression
 ```
+
+##### Пример игры
+
+[![asciicast](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo.svg)](https://asciinema.org/a/oYcr24UYLHBFpGqDVbDawZXxo)
     
 Игра: "Калькулятор"
 =========================
@@ -75,4 +93,9 @@ $brain-progression
 ```
 $brain-calc
 ```
+
+##### Пример игры
+
+[![asciicast](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F.svg)](https://asciinema.org/a/XzU1t9ODsu6TRdqiJOlbXPJ8F)
+
     
