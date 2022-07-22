@@ -38,8 +38,6 @@ $brain-even
 Игра: "Проверка простого числа"
 =========================
 
-[![asciicast](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao.svg)](https://asciinema.org/a/WwCJNGOwPVhHDhiqWzboqCHao)
-
 Суть игры в следующем: игроку показывается случайное число. Ему нужно ответить yes, если число простое, или no — если нет.
 
 #### Запуск игры
