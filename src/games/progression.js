@@ -4,19 +4,18 @@ import { getRandomNumber } from '../utils.js';
 const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-const getNumProgress = () => {
-  const step = getRandomNumber(2, 5);
-  let progressionNum = getRandomNumber(0, 50);
+const getProgression = (startNum, step) => {
   const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(progressionNum);
-    progressionNum += step;
+    progression.push(startNum + step * i);
   }
   return progression;
 };
 
 const getQuestionAndAnswer = () => {
-  const progression = getNumProgress();
+  const startNum = getRandomNumber(0, 50);
+  const step = getRandomNumber(2, 8);
+  const progression = getProgression(startNum, step);
   const randomIndex = getRandomNumber(0, 9);
 
   const correctAnswer = String(progression[randomIndex]);

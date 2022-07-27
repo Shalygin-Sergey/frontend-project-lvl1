@@ -10,7 +10,7 @@ const getRandomOperationSymbol = (symbols) => {
   return randomSymbol;
 };
 
-const isArithmeticOperations = (symbol, firstValue, secondValue) => {
+const calculateOperations = (symbol, firstValue, secondValue) => {
   switch (symbol) {
     case '+':
       return firstValue + secondValue;
@@ -29,7 +29,7 @@ const getQuestionAndAnswer = () => {
   const secondNumber = getRandomNumber(0, 50);
 
   const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
-  const correctAnswer = String(isArithmeticOperations(randomSymbol, firstNumber, secondNumber));
+  const correctAnswer = String(calculateOperations(randomSymbol, firstNumber, secondNumber));
 
   return [question, correctAnswer];
 };

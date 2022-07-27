@@ -17,12 +17,12 @@ export default (description, getQuestionAndAnswer) => {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
     // записываем ответ пользователя
-    const userResponse = readlineSync.question('You answer: ');
+    const userAnswer = readlineSync.question('You answer: ');
     // проверяем совпадает ли ответ юзера и правильный ответ
-    if (correctAnswer === userResponse) {
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${userResponse} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
